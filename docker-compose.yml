@@ -1,0 +1,7 @@
+services:
+  sales-analyzer:
+    build: .
+    volumes:
+      - ./data:/app/data
+    environment:
+      - SALES_DATA=/app/data/sample_sales.csv
